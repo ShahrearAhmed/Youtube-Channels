@@ -15,6 +15,10 @@ const Channels = () => {
         const newCart = [...cart, channleProduct];
         setCart(newCart);
     }
+    const channelNameAddToCart = (channleProduct) => {
+        const nameCart = [...cart, channleProduct];
+        setCart(nameCart);
+    }
 
     return (
         <div className="channels-container">
@@ -24,7 +28,8 @@ const Channels = () => {
                     channelsProduct.map(channleProduct => <Product
                         key={channleProduct.key}
                         channleProduct={channleProduct}
-                        handleAddToCart={handleAddToCart}></Product>)
+                        handleAddToCart={handleAddToCart}
+                        channelNameAddToCart={channelNameAddToCart}></Product>)
                 }
             </div>
             <div className="cart-container">
