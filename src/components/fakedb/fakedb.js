@@ -143,8 +143,8 @@ const channels = [
     {
         key: 'B00464HSHD',
         name: 'Coding Addict',
-        author: '',
-        subscribers: '',
+        author: 'John Smilga',
+        subscribers: '121K',
         videos: 555,
         date: ' Dec 9, 2016',
         price: 1700,
